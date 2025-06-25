@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B047826-ABDD-4399-B874-4D1AAD8EB096}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Meal</RootNamespace>
+    <AssemblyName>Meal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\Helper.cs" />
+    <Compile Include="Design\AddToCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\AddToCart.Designer.cs">
+      <DependentUpon>AddToCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\Adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\Adminlogin.Designer.cs">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\AdminRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\AdminRegistration.Designer.cs">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\BeefKichuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BeefKichuri.Designer.cs">
+      <DependentUpon>BeefKichuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\BeefRice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BeefRice.Designer.cs">
+      <DependentUpon>BeefRice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ChickenKichuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ChickenKichuri.Designer.cs">
+      <DependentUpon>ChickenKichuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\EggKichuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\EggKichuri.Designer.cs">
+      <DependentUpon>EggKichuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\FoodItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FoodItem.Designer.cs">
+      <DependentUpon>FoodItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\Paratha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\Paratha.Designer.cs">
+      <DependentUpon>Paratha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\RuiRice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\RuiRice.Designer.cs">
+      <DependentUpon>RuiRice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ShowProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ShowProfile.Designer.cs">
+      <DependentUpon>ShowProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imrul\Admins.cs" />
+    <Compile Include="Imrul\Cart.cs" />
+    <Compile Include="Imrul\User.cs" />
+    <Compile Include="Imrul\UserProfile.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Design\AddToCart.resx">
+      <DependentUpon>AddToCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\Adminlogin.resx">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AdminRegistration.resx">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BeefKichuri.resx">
+      <DependentUpon>BeefKichuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BeefRice.resx">
+      <DependentUpon>BeefRice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChickenKichuri.resx">
+      <DependentUpon>ChickenKichuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\EggKichuri.resx">
+      <DependentUpon>EggKichuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FoodItem.resx">
+      <DependentUpon>FoodItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\Paratha.resx">
+      <DependentUpon>Paratha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\RuiRice.resx">
+      <DependentUpon>RuiRice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ShowProfile.resx">
+      <DependentUpon>ShowProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porata.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruimas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beef_khichuri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rice_Beef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KhichuriChicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kichuri_EGG.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
